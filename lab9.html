@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script>
+</script>
+<body>
+    <div id = "div1">
+        <p><strong>Here you can see a simple code</strong></p>
+    <code>
+    //Example 1<br>
+    int a = 12;<br>
+    int b = 10;<br>
+    System.out.println(a*b);
+    </code><br>
+    <p>And the sample output is going to look like: </p>
+    <samp>
+        120
+    </samp><br>
+    <p>After writing these code you can run it by pressing <kbd>F5</kbd> button</p>
+    <p>Explanation: We just multiply <var>a</var> which is 12 and <var>b</var> which is 10</p>
+</div><br><br>
+<div id = "div2">
+    <p><strong>  This is my Task9 and it is really important  </strong></p>
+    <p>  I am a student of <abbr title="Suleyman Demirel University">SDU</abbr>.</p>
+    <address>
+        Sent by <a href="mailto:zhaniya.amangaliyeva@gmail.com">Zhaniya Amangaliyeva</a>
+    </address>
+    <p>  Last quiz results: </p>
+    <ul>
+ <li>User <bdi>hrefs</bdi>: 60 points</li>
+ <li>User <bdi>jdoe</bdi>: 80 points</li>
+ <li>User <bdi>إيان</bdi>: 90 points</li>
+</ul>
+ <p>Изменение направления текста</p>
+    <p>Если написать "привет Жания" внутри bdo rtl, получится "<bdo dir="rtl">привет Жания</bdo>".<br>
+        Но если написать внутри bdo ltr, получится "<bdo dir="ltr">привет Жания</bdo>".
+    </p>
+
+    <blockquote cite="https://www.huxley.net/bnw/four.html">
+    <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+    <footer>—Aldous Huxley, <cite>Brave New World</cite></footer>
+</blockquote>
+
+ <p>Станислав Лец утверждал: <q>Чаще всего выход там, где был 
+    вход</q>.</p>
+
+    <p>Eskiden Iphonelar 
+  <del>12000TL</del> <ins>simdi 10000TL-e dustu</ins>.</p>
+  <p>Do not forget to buy <mark>milk</mark> today.</p>
+
+</div>
+
+<div id="demo">
+  <h2>Let AJAX change this text</h2>
+  <button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 0 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}
+</script>
+</body>
+</head>
+</html>
